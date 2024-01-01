@@ -1,0 +1,16 @@
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\DAL.dll.config
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\DAL.dll
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\DAL.pdb
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\EntityFramework.dll
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\EntityFramework.xml
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.dll
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.pdb
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.DataBaseCreate.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeType.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.roleAdded.resources
