@@ -15,6 +15,15 @@ namespace DAL
         {
             return new RoleRepo();
         }
+        public static IEmployeeRepo<Employee, int> EmployeeData()
+        {
+            return new EmployeeRepo();
+        }
+
+        public static IUserRepo<User, int> UserData()
+        {
+            return new UserRepo();
+        }
 
     }
 }

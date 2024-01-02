@@ -10,7 +10,10 @@ namespace DAL.EF.Models
         public int Id { get; set; }
 
         [Required]
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
 
         [Required]
         public string Gender { get; set; }
@@ -26,6 +29,9 @@ namespace DAL.EF.Models
 
         [Required]
         public string PermanentAddress { get; set; }
+
+        [Required]
+        public string EmailAddress { get; set; }
 
         [Required]
         public string Status { get; set; }

@@ -21,7 +21,7 @@ namespace BLL.Validation
                     ErrorMessage = "*length minimum 3";
                     return false;
                 }
-                if (value is string strValue && !Regex.IsMatch(strValue, "^[a-zA-Z]+$"))
+                if (value is string strValue && !Regex.IsMatch(strValue, "^[a-zA-Z ]+$"))
                 {
                     ErrorMessage = "*Only letters are allowed";
                     return false;

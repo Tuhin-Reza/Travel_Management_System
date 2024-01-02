@@ -24,16 +24,6 @@ namespace DAL.Repos
             return db.EmployeeTypes.ToList();
         }
 
-        public EmployeeType Name(string employeeTypeName)
-        {
-            var existingEmployeeType = (from emplType in db.EmployeeTypes
-                                        where emplType.EmployeeTypeName == employeeTypeName
-                                        select emplType).SingleOrDefault();
-            return existingEmployeeType;
-
-
-        }
-
         public EmployeeType Update(EmployeeType obj)
         {
             var ex = Get(obj.Id);
@@ -56,6 +46,14 @@ namespace DAL.Repos
                 return ex;
             }
             return null;
+        }
+
+        public EmployeeType Name(string employeeTypeName)
+        {
+            var existingEmployeeType = (from emplType in db.EmployeeTypes
+                                        where emplType.EmployeeTypeName == employeeTypeName
+                                        select emplType).SingleOrDefault();
+            return existingEmployeeType;
         }
     }
 }

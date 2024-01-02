@@ -56,11 +56,20 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DTOS\EmployeeDTO.cs" />
+    <Compile Include="DTOS\EmployeeStatusDTO.cs" />
     <Compile Include="DTOS\EmployeeTypeDTO.cs" />
     <Compile Include="DTOS\EmployeeTypeEmployeeDTO.cs" />
+    <Compile Include="DTOS\RoleDTO.cs" />
+    <Compile Include="DTOS\RoleUserDTO.cs" />
+    <Compile Include="DTOS\TokenDTO.cs" />
+    <Compile Include="DTOS\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
     <Compile Include="Services\EmployeeTypeService.cs" />
+    <Compile Include="Services\RoleService.cs" />
     <Compile Include="Validation\EmployeeTypeValidation.cs" />
+    <Compile Include="Validation\EmployeeValidation.cs" />
+    <Compile Include="Validation\RoleValidation.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

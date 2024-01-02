@@ -185,5 +185,315 @@ namespace ApplicationLayer.Controllers
             }
         }
 
+
+        //-------------------Role-------------------------
+        [HttpPost]
+        [Route("api/role/create")]
+        public HttpResponseMessage Create(RoleDTO dto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var duplCheck = RoleService.Create(dto);
+                    if (duplCheck != null)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, "Successfully Inserted");
+                    }
+                    else
+                    {
+                        return Request.CreateResponse(HttpStatusCode.Conflict, "Entity already exists");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/role/{id}")]
+        public HttpResponseMessage GetRole(int id)
+        {
+            try
+            {
+                var data = RoleService.GetRole(id);
+
+                if (data != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Role not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/role/list")]
+        public HttpResponseMessage GetAllRoles()
+        {
+            try
+            {
+                var data = RoleService.GetAll();
+                if (data.Count > 1)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Role not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpPut]
+        [Route("api/role/update")]
+        public HttpResponseMessage UpdateRole(RoleDTO dto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var updateResult = RoleService.Update(dto);
+                    if (updateResult)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, "Updated");
+                    }
+                    else
+                    {
+                        return Request.CreateResponse(HttpStatusCode.BadRequest, "Role Not Found");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpDelete]
+        [Route("api/role/delete/{id}")]
+        public HttpResponseMessage DeleteRole(int id)
+        {
+            try
+            {
+                var deleteResult = RoleService.Delete(id);
+
+                if (deleteResult)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Successfully Deleted");
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "Role Not Found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+
+
+        //-------------------Employee-------------------------
+
+        [HttpPost]
+        [Route("api/employee/create")]
+        public HttpResponseMessage Create(EmployeeDTO dto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var duplCheck = EmployeeService.Create(dto);
+                    if (duplCheck != null)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, "Successfully Inserted");
+                    }
+                    else
+                    {
+                        return Request.CreateResponse(HttpStatusCode.Conflict, "Email already exists");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/employee/{id}")]
+        public HttpResponseMessage GetEmployee(int id)
+        {
+            try
+            {
+                var data = EmployeeService.GetEmployee(id);
+
+                if (data != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Employee not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/employee/list")]
+        public HttpResponseMessage GetAllEmployees()
+        {
+            try
+            {
+                var data = EmployeeService.GetAll();
+                if (data.Count > 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Employees not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpPut]
+        [Route("api/employee/update")]
+        public HttpResponseMessage UpdateEmployee(EmployeeDTO dto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var updateResult = EmployeeService.Update(dto);
+                    if (updateResult)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, "Updated");
+                    }
+                    else
+                    {
+                        return Request.CreateResponse(HttpStatusCode.BadRequest, "Employee Not Found");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpDelete]
+        [Route("api/employee/delete/{id}")]
+        public HttpResponseMessage DeleteEmployee(int id)
+        {
+            try
+            {
+                var deleteResult = EmployeeService.DeleteEmployee(id);
+
+                if (deleteResult)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, "Successfully Deleted");
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "Employee Not Found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpPut]
+        [Route("api/employee/updateStatus")]
+        public HttpResponseMessage UpdateStatus(EmployeeStatusDTO dto)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var updateResult = EmployeeService.UpdateStatus(dto);
+                    if (updateResult)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, "Status Updated");
+                    }
+                    else
+                    {
+                        return Request.CreateResponse(HttpStatusCode.NotFound, "Employee Not Found");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("api/employee/getByStatus/{status}")]
+        public HttpResponseMessage GetAllByStatus(string status)
+        {
+            try
+            {
+                var data = EmployeeService.GetAllByStatus(status);
+                if (data.Count > 0)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, data);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound, "Employees with specified status not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+
     }
 }

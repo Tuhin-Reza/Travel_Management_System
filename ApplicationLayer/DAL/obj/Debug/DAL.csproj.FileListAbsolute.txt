@@ -14,3 +14,5 @@ C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.M
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeType.resources
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.roleAdded.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeUpdate.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeAddEmail.resources

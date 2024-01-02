@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static BLL.Validation.RoleValidation;
 
 namespace BLL.DTOS
 {
-    internal class RoleDTO
+    public class RoleDTO
     {
+        public int Id { get; set; }
+        [RoleName]
+        public string RoleName { get; set; }
     }
 }
