@@ -9,7 +9,7 @@ namespace DAL.Interfaces
         List<CLASS> GetAll();
         CLASS Update(CLASS obj);
         CLASS Delete(ID id);
-        CLASS Name(string employeeTypeName);
+        CLASS Name(string Name);
 
     }
 }

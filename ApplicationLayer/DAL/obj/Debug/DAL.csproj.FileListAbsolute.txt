@@ -16,3 +16,14 @@ C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.M
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.roleAdded.resources
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeUpdate.resources
 C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.employeeAddEmail.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.HotelInfos.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.CategoryDecriptionAdded.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.updatePropertyCategory.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.DestinationCountry.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.DestinationCountryCity.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.DestinationCountryCityPlace.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.Hotel_Room.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.HotelRelation.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.updateRoomTypeForHotel.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.Leave.resources
+C:\Users\My PC\Desktop\1.DOT_NET_FOLDER\TMS\ApplicationLayer\DAL\obj\Debug\DAL.Migrations.TokenStart.resources

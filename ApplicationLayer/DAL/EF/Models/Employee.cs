@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,6 +7,12 @@ namespace DAL.EF.Models
 {
     public class Employee
     {
+        public Employee()
+        {
+            this.LeaveRequests = new List<LeaveRequest>();
+            this.LeaveSheets = new List<LeaveSheet>();
+            this.EmployeeSalaries = new List<EmployeeSalary>();
+        }
         [Key]
         public int Id { get; set; }
 
@@ -40,5 +47,10 @@ namespace DAL.EF.Models
         [ForeignKey("EmployeeType")]
         public int EmplTypeId { get; set; }
         public virtual EmployeeType EmployeeType { get; set; }
+
+
+        public ICollection<LeaveRequest> LeaveRequests { get; set; }
+        public ICollection<LeaveSheet> LeaveSheets { get; set; }
+        public ICollection<EmployeeSalary> EmployeeSalaries { get; set; }
     }
 }

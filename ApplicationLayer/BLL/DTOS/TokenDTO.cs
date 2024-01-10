@@ -14,6 +14,7 @@ namespace BLL.DTOS
         public DateTime CreatedTime { get; set; }
 
         public DateTime? ExpiredTime { get; set; }
+
         public string UserId { get; set; }
     }
 }

@@ -4,8 +4,22 @@ using System.Linq;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IUserRepo<User, int>
+    internal class UserRepo : Repo, IUserRepo<User, int>, IAuth<User>
     {
+        public User Auth(User user)
+        {
+            var data = (from u in db.Users
+                        where u.Username.Equals(user.Username)
+                             && u.Password.Equals(user.Password)
+                        select u).SingleOrDefault();
+
+            if (data == null)
+            {
+                return null;
+            }
+            return data;
+        }
+
         public void create(User user)
         {
             db.Users.Add(user);

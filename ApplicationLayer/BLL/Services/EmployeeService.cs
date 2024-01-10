@@ -3,7 +3,8 @@ using BLL.DTOS;
 using DAL;
 using DAL.EF.Models;
 using System.Collections.Generic;
-
+using System.Net;
+using System.Net.Mail;
 namespace BLL.Services
 {
     public class EmployeeService
@@ -44,8 +45,29 @@ namespace BLL.Services
                 user.EmpId = value.Id;
                 user.RoleId = data2.RoleId;
 
-
                 DataAccessFactory.UserData().create(user);
+
+                string senderEmail = "vivop672@gmail.com";
+                string senderPassword = "xjfd bqaz dhhs rrxl";
+                string recipientEmail = data.EmailAddress;
+
+
+                string subject = "Login Information";
+                string body = "Username: " + user.Username + " Password: " + user.Password;
+
+
+
+
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true,
+                };
+
+
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail, subject, body);
+                smtpClient.Send(mailMessage);
 
                 return dto;
             }
